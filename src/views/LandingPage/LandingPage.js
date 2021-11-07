@@ -23,6 +23,7 @@ import CoverageSection from "./Sections/CoverageSection.js";
 import TimeMoneySection from "./Sections/TimeMoneySection.js";
 import RequestQuote from "./Sections/RequestQuote.js";
 import WorkSection from "./Sections/WorkSection.js";
+import AboutSection from "./Sections/AboutSection.js";
 
 const dashboardRoutes = [];
 
@@ -52,7 +53,7 @@ export default function LandingPage(props) {
               <h1 className={classes.title}>
                 Moving You Towards Stress-Free Trucking
               </h1>
-              <h4>
+              <h4 className={classes.subtitle}>
                 ATD Logistics specializes in handling the back-office operations
                 for operations for owner-operators & trucking fleets. We also
                 help shippers deliver on time, every time with minimum headache.
@@ -73,6 +74,7 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
+          <AboutSection />
           <ProductSection />
         </div>
         <div>
