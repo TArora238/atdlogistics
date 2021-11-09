@@ -1,30 +1,34 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import ArrowForward from "@material-ui/icons/ArrowForward";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/requestQuote.js";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/lookingMore.js";
 
 const useStyles = makeStyles(styles);
 
-export default function RequestQuoteSection() {
+export default function LookingMoreSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <div className={classes.requestQuote}>
-        <GridContainer justify="center">
+      <div className={classes.lookingMore}>
+        <GridContainer justify="start">
           <GridItem>
+            <h1 className={classes.title}>Looking for more?</h1>
             <h1 className={classes.title}>
-              Our experts are ready to help find the right solution for your
-              needs.
+              Here are a few places you need to explore
             </h1>
-            <Button color="info">
-              Request A Quote <ArrowForward />
-            </Button>
+            <div>
+              <Button color="info" simple>
+                About Us
+              </Button>
+              <Button color="info" simple>
+                Contact Us
+              </Button>
+            </div>
           </GridItem>
         </GridContainer>
       </div>

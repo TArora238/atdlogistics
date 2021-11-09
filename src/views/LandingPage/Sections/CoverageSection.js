@@ -15,7 +15,7 @@ export default function CoverageSection() {
   return (
     <div className={classes.section}>
       <div>
-        <GridContainer justify="center">
+        <GridContainer justify="center" className={classes.coverageSection}>
           <GridItem xs={12} sm={12} md={6} className="greySection">
             <h2 className={classes.title}>INDUSTRY SECTORS COVERAGE</h2>
             <h5 className={classes.description}>
@@ -30,7 +30,7 @@ export default function CoverageSection() {
               <li className={classes.description}>Energy, Oil & Gas</li>
             </ul>
           </GridItem>
-          <GridItem xs={12} sm={12} md={6}>
+          <GridItem xs={12} sm={12} md={6} className="greySection">
             <div className="coverageBG"></div>
           </GridItem>
         </GridContainer>

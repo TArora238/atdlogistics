@@ -24,6 +24,8 @@ import TimeMoneySection from "./Sections/TimeMoneySection.js";
 import RequestQuote from "./Sections/RequestQuote.js";
 import WorkSection from "./Sections/WorkSection.js";
 import AboutSection from "./Sections/AboutSection.js";
+import SolutionsSection from "./Sections/SolutionsSection.js";
+import LookingMoreSection from "./Sections/LookingMoreSection.js";
 
 const dashboardRoutes = [];
 
@@ -37,11 +39,11 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="ATD Logistics"
+        // brand={<img src={logo} alt="..." height="50" />}
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "white",
         }}
         {...rest}
@@ -75,9 +77,13 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
           <AboutSection />
+        </div>
+        <SolutionsSection />
+        <div className={classes.container}>
           <ProductSection />
         </div>
         <div>
+          <LookingMoreSection />
           <CoverageSection />
           <TimeMoneySection />
           <RequestQuote />

@@ -1,12 +1,13 @@
 import { title } from "assets/jss/material-kit-react.js";
 
-const coverageStyle = {
-  section: {
-    padding: "70px 0 0",
-    textAlign: "left",
+const productStyle = {
+  requestQuote: {
+    background: "#2c3741",
+    padding: "4em 2em",
   },
-  coverageSection: {
-    alignItems: "center",
+  section: {
+    padding: "70px 0",
+    textAlign: "center",
   },
   title: {
     ...title,
@@ -14,10 +15,12 @@ const coverageStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+    color: "white",
+    margin: "0 0 1em",
   },
   description: {
     color: "#999",
   },
 };
 
-export default coverageStyle;
+export default productStyle;

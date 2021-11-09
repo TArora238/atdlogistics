@@ -56,12 +56,28 @@ const infoStyle = {
     marginTop: "0px",
     fontSize: "14px",
   },
+  descriptionVertical: {
+    textAlign: "left",
+  },
+  descriptionHorizontal: {
+    textAlign: "left",
+    "& *": {
+      color: "white",
+    },
+  },
   iconWrapperVertical: {
     float: "none",
+  },
+  iconWrapperHorizontal: {
+    float: "left",
   },
   iconVertical: {
     width: "61px",
     height: "61px",
+  },
+  iconHorizontal: {
+    width: "75px",
+    height: "75px",
   },
 };
 

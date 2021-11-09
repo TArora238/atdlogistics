@@ -42,6 +42,7 @@ export default function AboutSection() {
               icon={Assignment}
               iconColor="gray"
               vertical
+              horizontal={false}
             />
           </div>
           <div className={classes.infoBox}>
@@ -51,6 +52,7 @@ export default function AboutSection() {
               icon={RoomService}
               iconColor="gray"
               vertical
+              horizontal={false}
             />
           </div>
           <div className={classes.infoBox}>
@@ -60,6 +62,7 @@ export default function AboutSection() {
               icon={EmojiPeople}
               iconColor="gray"
               vertical
+              horizontal={false}
             />
           </div>
           <div className={classes.infoBox}>
@@ -69,6 +72,7 @@ export default function AboutSection() {
               icon={LiveHelp}
               iconColor="gray"
               vertical
+              horizontal={false}
             />
           </div>
         </GridItem>

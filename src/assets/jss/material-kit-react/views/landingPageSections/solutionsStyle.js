@@ -1,13 +1,13 @@
-import { title, container } from "assets/jss/material-kit-react.js";
+import { title } from "assets/jss/material-kit-react.js";
 
-const aboutStyle = {
+const productStyle = {
+  requestQuote: {
+    background: "#2c3741",
+    padding: "4em 2em",
+  },
   section: {
     padding: "70px 0",
-    textAlign: "left",
-  },
-  container: {
-    ...container,
-    alignItems: "center",
+    textAlign: "center",
   },
   title: {
     ...title,
@@ -15,6 +15,8 @@ const aboutStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+    color: "white",
+    margin: "0 0 1em",
   },
   description: {
     color: "#999",
@@ -41,4 +43,4 @@ const aboutStyle = {
   },
 };
 
-export default aboutStyle;
+export default productStyle;

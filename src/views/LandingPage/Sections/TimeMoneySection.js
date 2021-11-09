@@ -15,8 +15,8 @@ export default function TimeMoneySection() {
   return (
     <div className={classes.section}>
       <div>
-        <GridContainer justify="center">
-          <GridItem xs={12} sm={12} md={6}>
+        <GridContainer justify="center" className={classes.coverageSection}>
+          <GridItem xs={12} sm={12} md={6} className="greySection">
             <div className="timeMoneyBG"></div>
           </GridItem>
           <GridItem xs={12} sm={12} md={6} className="greySection">
